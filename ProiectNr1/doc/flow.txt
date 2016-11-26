@@ -1,0 +1,52 @@
+clases:
+	1. class ReadFromFile: methods for reading destinations, informations about the hotels, transport, etc...
+	2. class BookingPackage{
+		Destination{
+			city, country, attractions
+		}
+		Dates{
+			startDate
+			endDate
+		}
+		Hotels{
+			numberRooms
+			numberOfPeoplePerRoom
+			numberOfStars
+		}
+		Transport{
+			type
+		}
+		price
+	}
+	3. class AccomodationFilter{
+		city, country;
+		startDate, endDate;
+		numberRooms, numberOfPeoplePerRoom;
+		numberOfStars;
+		minPrice, maxPrice;
+		meansOfTransportation;
+		
+	}
+	4. class ActivitiesFilter{
+		city, country;
+		startDate, endDate;
+		activityType, activityName;
+		
+	4. class FilterResult{
+		List<BookingPackage> searchResult;
+	}
+agent clases:
+	/*1. ReadFromFileAgent{
+		fileName
+		readFromFile(){} }*/
+	2.1 ClientAgentService: user interface logic(select filters, send messages, receive messages, display info)
+	2.2 ClientInterface : the interface
+	3. ServiceAgent: has the information, receives request, sends result
+	 3.1 HotelAgent: hotel category, number of stars, price, number of rooms, number of people per room
+	 3.2 DestinationAgent: 
+
+	 
+Use case:
+	- search by: 	1. price
+					2. 
+	
